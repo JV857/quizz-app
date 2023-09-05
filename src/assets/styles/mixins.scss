@@ -1,0 +1,49 @@
+// $breakpoint is the variable that can have several values
+@mixin Breakpoints($breakpoint) {
+  //the name of the mixin is devices
+
+  @if $breakpoint == xs {
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == sm {
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == "sm-md" {
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xl {
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* Large devices (laptops/desktops, 992px and up) */
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}

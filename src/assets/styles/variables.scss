@@ -1,0 +1,42 @@
+// fonts //
+
+$Gotham: "Gotham";
+$GothamBook: "GothamBook";
+$GothamBlack: "GothamBlack";
+
+// fonts //
+
+@mixin text_centered {
+  text-align: center !important;
+}
+
+@mixin flex_centered {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex_vertically_centered {
+  display: flex;
+align-items: center;
+}
+
+@mixin flex_space_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex_space_evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+// Variables
+
+// Font
+$font-family: "Gotham", sans-serif;
+
+// Font colors
+$color-theme: #005981;
+$color-white: white;
+$color-red: red;
+

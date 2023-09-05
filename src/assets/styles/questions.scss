@@ -1,0 +1,8 @@
+.questions_wrapper{
+    .question_title{
+        @include flex_space_between;
+        .timer_container{
+            display: flex;
+        }
+    }
+}
